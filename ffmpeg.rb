@@ -3,7 +3,7 @@ namespace :panda do
   # TODO break out into smaller sections
   desc "Install FFMPEG"
   task :install_ffmpeg do
-    ["rm lame-398.tar.gz",
+    ["rm -rf lame-398.tar.gz",
      "rm -rf lame-398",
      "wget http://downloads.sourceforge.net/lame/lame-398.tar.gz?modtime=1215212728&big_mirror=0",
      "sudo tar -xf lame-398.tar.gz",
@@ -11,7 +11,7 @@ namespace :panda do
      "sudo aptitude install build-essential git-core zlib1g-dev checkinstall libgpac-dev libfaad-dev libfaac-dev liblame-dev libtheora-dev libvorbis-dev gpac subversion -y",
      
      # Make video encoding faster
-     "rm yasm-0.7.1.tar.gz",
+     "rm -rf yasm-0.7.1.tar.gz",
      "rm -rf yasm-0.7.1",
      "wget http://www.tortall.net/projects/yasm/releases/yasm-0.7.1.tar.gz",
      "tar xzvf yasm-0.7.1.tar.gz",
