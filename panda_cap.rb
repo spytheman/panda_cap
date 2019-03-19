@@ -1,5 +1,5 @@
 namespace :panda do
-  
+
   desc "Install everything" # Haven't tested this as I did it all individually, but it should work
   task :install do
     apt_get_update
